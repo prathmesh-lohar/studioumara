@@ -22,8 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -157,8 +157,8 @@
         </div>
         <!-- Bottom Pattern Image -->
         <!-- <img src="images/brand/hero-pattern.png" width="100%" alt="Pattern" class="hero-pattern"> -->
-        <div class="hero-pattern" data-bg-low="/images/brand/hero-pattern-small.png"
-            data-bg-high="/images/brand/hero-pattern.png">
+        <div class="hero-pattern" data-bg-low="./images/brand/hero-pattern-small.png"
+            data-bg-high="./images/brand/hero-pattern.png">
         </div>
 
 
@@ -680,13 +680,17 @@
                         </p>
                         <h1 class="display-3 fw-bold mb-4">LET’S TALK</h1>
                         <div class="d-flex gap-3 flex-wrap">
-                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">🎨
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small"><span
+                                    class="fa fa-dribbble"></span>
                                 Dribbble</a>
-                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">🖌️
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small"><span
+                                    class="fa fa-behance"></span>
                                 Behance</a>
-                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">📍
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small"><span
+                                    class="fa fa-pinterest"></span>
                                 Pinterest</a>
-                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">💼
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small"><span
+                                    class="fa fa-linkedin"></span>
                                 LinkedIn</a>
                         </div>
                     </div>
@@ -708,8 +712,10 @@
             <div class="row gy-4">
                 <!-- Logo & Description -->
                 <div class="col-md-4">
-                    <h5 class="fw-bold mb-2">Λ → LERIC</h5>
-                    <small class="text-muted">Since . 2018</small>
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="images/logo.png" alt="Design Studio Logo" height="67" class="me-3">
+                        <span class="fw-bold text-light brand-name">DESIGN STUDIO</span>
+                    </a>
                     <p class="mt-3 text-secondary small">
                         We’re a Global Digital Agency Since 2018 to Provide Smart Solutions.
                     </p>
@@ -718,8 +724,8 @@
                 <!-- Office -->
                 <div class="col-md-4">
                     <h6 class="fw-bold mb-2 text-uppercase">Our Office</h6>
-                    <p class="text-secondary small mb-1">Apple Inc.</p>
-                    <p class="text-secondary small mb-1">One Apple Park Way, Cupertino, CA 95014</p>
+                    <p class="text-secondary small mb-1">ABC Inc.</p>
+                    <p class="text-secondary small mb-1">One ABC Park Way, Cupertino, CA 95014</p>
                     <p class="text-secondary small">United States</p>
                 </div>
 
@@ -729,7 +735,7 @@
                     <form class="d-flex bg-dark rounded-3 p-2 align-items-center">
                         <input type="email" class="form-control bg-transparent border-0 text-white"
                             placeholder="Enter Email Address">
-                        <button type="submit" class="btn text-success fs-5">✈</button>
+                        <button type="submit" class="btn text-success fs-5"><span class="fa fa-paper-plane"></span></button>
                     </form>
                 </div>
             </div>
