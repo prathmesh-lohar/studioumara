@@ -1,0 +1,77 @@
+/* Right-side Slide Menu (Mobile Only) */
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease;
+    z-index: 1050;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.offcanvas-menu.active {
+    right: 0;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1040;
+}
+
+.offcanvas-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.offcanvas-header .close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.offcanvas-nav li {
+    margin-bottom: 1rem;
+}
+
+.offcanvas-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.offcanvas-nav a:hover {
+    color: #898143;
+    transform: translateX(5px);
+}
+
+.offcanvas-info h6 {
+    letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+
+    .offcanvas-menu,
+    .offcanvas-overlay {
+        display: none !important;
+    }
+}

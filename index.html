@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap 5.3.3 Starter Template" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Title -->
+    <title>Design Studio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Google Font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-f"></div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Left: Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Design Studio Logo" height="67" class="me-3">
+                <span class="fw-bold text-dark brand-name">DESIGN STUDIO</span>
+            </a>
+
+            <!-- Center: Nav Links (Desktop Only) -->
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Button (Desktop Only) -->
+            <a href="#" class="btn btn-primary rounded-0 lets-talk-btn btn-arrow d-none d-lg-inline-block">
+                <span class="arrow">→</span>
+                <span class="btn-text">Let’s Talk</span>
+            </a>
+
+
+            <!-- Toggler for Mobile -->
+            <button class="navbar-toggler d-lg-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Right-side Offcanvas Menu (Mobile Only) -->
+    <div class="offcanvas-menu d-lg-none">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center ">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Logo" height="50" class="me-2">
+                <span class="fw-bold text-dark brand-name ">DESIGN STUDIO</span>
+            </a>
+            <button class="close-btn">&times;</button>
+        </div>
+        <!-- <hr class="flex-grow-1 m-0 p-0"> -->
+
+        <ul class="offcanvas-nav list-unstyled mt-4">
+            <li><a href="#">Home <span>›</span></a></li>
+            <li><a href="#">About <span>›</span></a></li>
+            <li><a href="#">Services <span>›</span></a></li>
+            <li><a href="#">FAQ <span>›</span></a></li>
+            <li><a href="#">Portfolio <span>›</span></a></li>
+            <li><a href="#">Contact <span>›</span></a></li>
+        </ul>
+
+        <div class="offcanvas-info mt-4">
+            <h6 class="fw-bold">INFORMATION</h6>
+            <p class="mb-1">+4 20 7700 1007</p>
+            <p class="mb-1">hello@designstudio.com</p>
+            <p>Avenue de Roma 158b, Lisboa</p>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Text Section -->
+                <div class="col-lg-7">
+                    <h1 class="hero-title mb-4">
+                        <span class="highlight">DESIGNING</span> EXPERIENCES.<br>
+                        MANAGING <span class="highlight">MOMENTS</span>
+                    </h1>
+
+                    <p class="hero-subtitle mb-4">We craft intuitive… lasting impact.</p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="avatars d-flex me-3">
+                            <img src="images/users/user1.jpg" alt="Client" class="avatar">
+                            <img src="images/users/user2.jpg" alt="Client" class="avatar">
+                            <img src="images/users/user3.jpg" alt="Client" class="avatar">
+                        </div>
+                        <p class="mb-0 fw-medium hero-text-muted-client">
+                            We have 20+ <br> Happy Clients
+                        </p>
+
+
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary btn-lg px-4 rounded-0 hero-btn">Let’s Collaborate →</a> -->
+
+                    <a href="#" class="mt-2 btn btn-primary btn-lg px-4 rounded-0 hero-btn">
+                        <span class="arrow">→</span>
+                        <span class="btn-text">Let’s Collaborate</span>
+                    </a>
+
+
+
+
+                </div>
+
+                <!-- Right Illustration -->
+                <!-- <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <img src="images/brand/hero-illustration.png" alt="Illustration" class="img-fluid hero-img">
+                </div> -->
+
+                <div class="col-lg-5 text-center mt-5 mt-lg-0 d-none d-lg-block">
+                    <div class="hero-img-container">
+                        <img src="images/brand/hero-illustration.png" alt="Illustration" class="img-fluid hero-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Bottom Pattern Image -->
+        <!-- <img src="images/brand/hero-pattern.png" width="100%" alt="Pattern" class="hero-pattern"> -->
+        <div class="hero-pattern" data-bg-low="/images/brand/hero-pattern-small.png"
+            data-bg-high="/images/brand/hero-pattern.png">
+        </div>
+
+
+    </section>
+
+
+    <!-- servises -->
+
+    <section class="services-section services py-2 py-md-3">
+        <div class="container">
+            <h6 class="text-muted">Services</h6>
+            <h2 class="fw-bold mb-4 h2">DESIGN THAT INSPIRES, EXPERIENCES THAT LAST</h2>
+
+            <!-- Filter buttons -->
+            <div class="mb-4 d-flex gap-2 flex-wrap">
+                <button class="btn btn-filter active" data-filter="all" type="button">All</button>
+                <button class="btn btn-filter" data-filter="design" type="button">Design</button>
+                <button class="btn btn-filter" data-filter="built" type="button">Built</button>
+                <button class="btn btn-filter" data-filter="interior" type="button">Interior</button>
+            </div>
+
+            <!-- Cards row -->
+            <div class="row g-4 mb-5" id="services-container ">
+                <div class="col-md-6 col-lg-4 service-item" data-category="interior">
+                    <div class="card service-card p-3 h-100">
+                        <div class="icon light-bg-primary text-white mb-3">
+                            <img src="images/services/interiour.png" width="70%" alt="">
+                        </div>
+                        <h5 class="fw-bold">Residential Interiors</h5>
+                        <p class="text-muted">From cozy apartments to luxury homes — we design spaces that reflect your
+                            lifestyle and personality.</p>
+                        <a href="#" class="text-decoration-none fw-semibold">Learn More →</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 col-lg-4 service-item" data-category="design">
+                    <div class="card service-card p-3 h-100">
+                        <div class="icon light-bg-danger text-white mb-3">
+                            <img src="images/services/floor-lamp.png" width="70%" alt="">
+                        </div>
+                        <h5 class="fw-bold">Creative Design Concepts</h5>
+                        <p class="text-muted">We craft modern, innovative design concepts that transform spaces and
+                            leave a lasting impression.</p>
+                        <a href="#" class="text-decoration-none fw-semibold">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 service-item" data-category="built">
+                    <div class="card service-card p-3 h-100">
+                        <div class="icon light-bg-primary text-white mb-3">
+                            <img src="images/services/interiour.png" width="70%" alt="">
+                        </div>
+                        <h5 class="fw-bold">Architectural Builds</h5>
+                        <p class="text-muted">From concept to construction, we bring your architectural visions to life
+                            with precision and quality.</p>
+                        <a href="#" class="text-decoration-none fw-semibold">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- about us  -->
+
+
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Video -->
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <div class="video-wrapper mx-auto position-relative">
+                        <!-- Thumbnail Image -->
+                        <img src="images/Group 1000001762.png" alt="Video Thumbnail" class="img-fluid rounded shadow">
+
+
+                    </div>
+
+                </div>
+
+                <!-- Right: Text -->
+                <div class="col-lg-7">
+                    <div class="about-text">
+                        <h6 class="text-muted mb-2">About Us</h6>
+                        <h3 class="fw-bold mb-4 h2">
+                            Designing Experiences That Inspire<br>
+                            <span class="text-success">and Endure.</span>
+                        </h3>
+                        <p>
+                            At Design Studio we blend creativity, technology, and strategy to craft
+                            experiences that inspire. We are a multidisciplinary design and development
+                            studio specializing in digital design, web solutions, and interior space transformation.
+                        </p>
+                        <p>
+                            Our team of designers, developers, and innovators work together to turn ideas into
+                            meaningful experiences — whether it’s building a brand, creating a digital product,
+                            or designing an inspiring physical space.
+                        </p>
+                        <p>
+                            We believe great design is more than aesthetics — it’s about purpose, usability,
+                            and emotion. From concept to completion, we focus on delivering functional,
+                            future-ready, and human-centered solutions that make an impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- our clients  -->
+
+    <!-- CLIENTS SECTION -->
+    <section class="clients-section py-5 ">
+        <div class="container text-center">
+
+            <!-- <h2>Clients</h2> -->
+            <!-- Top small heading -->
+            <p class="text-primary text-uppercase fw-semibold small mb-1">
+                Meet Our Clients
+            </p>
+
+            <!-- Main heading -->
+            <h2 class="fw-bold mb-3 h2  ">Our Awesome Clients</h2>
+
+            <!-- Sub text -->
+            <p class="text-muted mb-5">
+                There are many variations of passages of Lorem Ipsum available, but the majority
+                have suffered alteration in some form.
+            </p>
+
+            <!-- Clients grid -->
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/image.png" alt="GrayGrids" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/demos-logo-vector.png" alt="UIdeck" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/4.PNG" alt="Ayro UI" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/pngtree-modern-demo-logo-design-vector-file-png-image_6602559.png"
+                            alt="Lineicons" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/pngtree-modern-demo-logo-vector-file-png-image_6608503.png"
+                            alt="Tailwind Templates" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="client-logo bg-white rounded-3 d-flex align-items-center justify-content-center p-4">
+                        <img src="images/clints/image.png" alt="Ecommerce HTML" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Portfolio -->
+
+    <section class="portfolio-section py-5">
+        <div class="container">
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase mb-3 h2">My Portfolio</h2>
+                <p class="text-muted mx-auto w-75">
+                    Explore my design services, from user interface and experience to prototyping and testing.
+                    Let’s craft exceptional digital experiences together.
+                </p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card ">
+                        <img src="images/projects/Image (1).png" class="img-fluid" alt="Educational Platform">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Educational Platform</h5>
+                            <p class="text-muted mb-0">Web Design / Usability Testing</p>
+                            <div class="arrow-icon"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4253 3.49622L5.24219 16.6793" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.4253 13.167V3.49622H8.75454" stroke="white" stroke-width="1.41248"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="images/projects/Image (2).png" class="img-fluid" alt="Travel App Design">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Travel App Design</h5>
+                            <p class="text-muted mb-0">UX Research / App Design</p>
+                            <div class="arrow-icon"><i class="fa fa-arrow"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="images/projects/Image.png" class="img-fluid" alt="Personal Page">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Personal Page</h5>
+                            <p class="text-muted mb-0">Web Design</p>
+                            <div class="arrow-icon"><i class="fa fa-arrow-up-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="images/projects/Image.png" class="img-fluid" alt="Personal Page">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Personal Page</h5>
+                            <p class="text-muted mb-0">Web Design</p>
+                            <div class="arrow-icon"><i class="fa fa-arrow-up-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="images/projects/Image.png" class="img-fluid" alt="Personal Page">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Personal Page</h5>
+                            <p class="text-muted mb-0">Web Design</p>
+                            <div class="arrow-icon"><i class="fa fa-arrow-up-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="images/projects/Image.png" class="img-fluid" alt="Personal Page">
+                        <div class="portfolio-info">
+                            <h5 class="fw-bold mt-3">Personal Page</h5>
+                            <p class="text-muted mb-0">Web Design</p>
+                            <div class="arrow-icon"><i class="fa fa-arrow-up-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testinomials  -->
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5 h2">Testimonials</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimonial Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center">
+                            <!-- Image -->
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <div class="testimonial-img-wrapper mx-auto">
+                                    <img src="images/reviews/cheerful-curly-business-girl-wearing-glasses 1.png"
+                                        alt="Client" class="img-fluid rounded-3">
+                                </div>
+                            </div>
+
+                            <!-- Text -->
+                            <div class="col-md-6 text-start">
+                                <div class="testimonial-text">
+                                    <div class="display-5 text-dark mb-3">“</div>
+                                    <p class="fs-5 text-dark">
+                                        They are the best people. And this is the suitable platform to learn from
+                                        distance.
+                                        I have enjoyed a lot learning with them. They are very helpful and kind people.
+                                    </p>
+                                    <p class="mt-4 mb-0 fw-semibold ">
+                                        <span class="text-warning">— Jingbo Shan,</span> Manager
+                                    </p>
+                                </div>
+
+                                <!-- Navigation buttons -->
+                                <div class="mt-4 d-flex align-items-center">
+                                    <button class="btn btn-dark rounded me-2" type="button"
+                                        data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                        <i class="fa fa-angle-left"></i>
+                                    </button>
+                                    <button class="btn btn-warning rounded" type="button"
+                                        data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                        <i class="fa fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 2 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center">
+                            <!-- Image -->
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <div class="testimonial-img-wrapper mx-auto">
+                                    <img src="images/reviews/cheerful-curly-business-girl-wearing-glasses 1.png"
+                                        alt="Client" class="img-fluid rounded-3">
+                                </div>
+                            </div>
+
+                            <!-- Text -->
+                            <div class="col-md-6 text-start">
+                                <div class="testimonial-text">
+                                    <div class="display-5 text-dark mb-3">“</div>
+                                    <p class="fs-5 text-dark">
+                                        They are the best people. And this is the suitable platform to learn from
+                                        distance.
+                                        I have enjoyed a lot learning with them. They are very helpful and kind people.
+                                    </p>
+                                    <p class="mt-4 mb-0 fw-semibold ">
+                                        <span class="text-warning">— Jingbo Shan,</span> Manager
+                                    </p>
+                                </div>
+
+                                <!-- Navigation buttons -->
+                                <div class="mt-4 d-flex align-items-center">
+                                    <button class="btn btn-dark rounded me-2" type="button"
+                                        data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                        <i class="fa fa-angle-left"></i>
+                                    </button>
+                                    <button class="btn btn-warning rounded" type="button"
+                                        data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                        <i class="fa fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators position-relative mt-5">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active bg-warning" aria-current="true"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        class="bg-secondary"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM CSS -->
+
+
+
+
+    <!-- contact us -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section py-5 ">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold h2">Contact our team</h2>
+                <p class="text-muted ">
+                    Got any questions about the product or scaling on our platform? We’re here to help.
+                    Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- LEFT FORM -->
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small text-dark">First name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-dark">Last name</label>
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small text-dark">Email</label>
+                                <input type="email" class="form-control" placeholder="you@company.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small text-dark">Phone number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white border-end-0 c-code">IN</span>
+                                    <input type="text" class="form-control border-start-0"
+                                        placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small text-dark">Message</label>
+                                <textarea rows="4" class="form-control" placeholder="Leave us a message..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Services -->
+                        <div class="mt-4">
+                            <label class="form-label small text-dark">Services</label>
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="webdesign">
+                                        <label class="form-check-label small" for="webdesign">Website design</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="uxdesign">
+                                        <label class="form-check-label small" for="uxdesign">UX design</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="userresearch">
+                                        <label class="form-check-label small" for="userresearch">User research</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="content">
+                                        <label class="form-check-label small" for="content">Content creation</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="strategy">
+                                        <label class="form-check-label small" for="strategy">Strategy &
+                                            consulting</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="other">
+                                        <label class="form-check-label small" for="other">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary w-100 mt-4 py-2">Send message</button>
+                    </form>
+                </div>
+
+                <!-- RIGHT INFO -->
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="contact-info">
+                        <h6 class="fw-bold mb-2">Chat with us</h6>
+                        <p class="text-muted small mb-2">Speak to our friendly team via live chat.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li class="mb-1"><a href="#" class="text-dark text-decoration-none"><i
+                                        class="fa fa-comments me-2"></i>Start a live chat</a></li>
+                            <li class="mb-1"><a href="#" class="text-dark text-decoration-none"><i
+                                        class="fa fa-send me-2"></i>Shoot us an email</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none"><i
+                                        class="fa fa-twitter me-2"></i>Message us on X</a></li>
+                        </ul>
+
+                        <h6 class="fw-bold mb-2">Call us</h6>
+                        <p class="text-muted small mb-2">Call our team Mon-Fri from 8 am to 5 pm.</p>
+                        <p><a href="tel:+15550000000" class="text-dark fw-semibold text-decoration-none"><i
+                                    class="fa fa-phone me-2"></i>+1 (555) 000-0000</a></p>
+
+                        <h6 class="fw-bold mb-2">Visit us</h6>
+                        <p class="text-muted small mb-1">Chat to us in person at our Melbourne H.Q.</p>
+                        <p><a href="#" class="text-dark fw-semibold text-decoration-none"><i
+                                    class="fa fa-map-marker me-2"></i>100 Smith Street, Collingwood VIC 3066</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS -->
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer bg-black text-white pt-5 pb-3">
+        <div class="container">
+
+            <!-- Top Section -->
+            <div class="footer-top position-relative mb-5">
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+                    <div>
+                        <p class="text-success fw-semibold small mb-1">
+                            Get’s Started a Project? <span class="arrow ms-1">→</span>
+                        </p>
+                        <h1 class="display-3 fw-bold mb-4">LET’S TALK</h1>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">🎨
+                                Dribbble</a>
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">🖌️
+                                Behance</a>
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">📍
+                                Pinterest</a>
+                            <a href="#" class="social-link btn btn-dark border-0 rounded-pill px-3 py-2 small">💼
+                                LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <!-- Circle Button on Right -->
+                    <div class="footer-btn mt-5 mt-md-0 text-md-end">
+                        <button class="btn start-btn text-white fw-bold">
+                            <i class="fa-solid fa-arrow-up-right mb-1 d-block"></i>
+                            START THE<br>JOURNEY
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-secondary opacity-25 mb-5">
+
+            <!-- Middle Section -->
+            <div class="row gy-4">
+                <!-- Logo & Description -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-2">Λ → LERIC</h5>
+                    <small class="text-muted">Since . 2018</small>
+                    <p class="mt-3 text-secondary small">
+                        We’re a Global Digital Agency Since 2018 to Provide Smart Solutions.
+                    </p>
+                </div>
+
+                <!-- Office -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-2 text-uppercase">Our Office</h6>
+                    <p class="text-secondary small mb-1">Apple Inc.</p>
+                    <p class="text-secondary small mb-1">One Apple Park Way, Cupertino, CA 95014</p>
+                    <p class="text-secondary small">United States</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-2 text-uppercase">Newsletter</h6>
+                    <form class="d-flex bg-dark rounded-3 p-2 align-items-center">
+                        <input type="email" class="form-control bg-transparent border-0 text-white"
+                            placeholder="Enter Email Address">
+                        <button type="submit" class="btn text-success fs-5">✈</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <hr class="border-secondary opacity-25 mt-5 mb-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-secondary">
+                <p class="mb-2 mb-md-0">
+                    <!-- © Copyright 2025 <strong>ThemePure</strong>. All Rights Reserved. -->
+                </p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="text-secondary text-decoration-none">Career</a>
+                    <a href="#" class="text-secondary text-decoration-none">Our Work</a>
+                    <a href="#" class="text-secondary text-decoration-none">Contact</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
