@@ -846,6 +846,39 @@ body {
     font-weight: 500;
 }
 
+
+/* carrer */
+
+.careers-section {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.c-right{
+    position: relative;
+}
+.c-right .text-dark{
+    position: absolute;
+    bottom:  -15rem;
+    font-size: 0.88rem;
+
+}
+.contents-list li {
+  margin-bottom: 0.4rem;
+}
+
+.contents-list a {
+  color: #323032;
+  text-decoration: none;
+  font-size: 0.80rem;
+  transition: color 0.2s ease;
+}
+
+.contents-list a:hover {
+  color: #f97316; /* orange accent hover */
+}
+
+
 /* footer */
 
 .footer {
