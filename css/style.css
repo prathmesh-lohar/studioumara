@@ -725,6 +725,11 @@ body {
 
 } */
 
+.testimonials-section{
+    font-family: sans-serif;
+}
+
+
 .testimonials-section .text-dark {
     color: #424241 !important;
 
